@@ -2,11 +2,11 @@
 import React, { useState } from 'react';
 
 
-export default function Navbar({ menuOpen, setMenuOpen }) {
+export default function Header({ menuOpen, setMenuOpen }) {
     
 
     return (
-        <header className='w-full flex flex-row justify-between items-center border-solid border-black border-4'>
+        <header className='w-full sticky top-0 flex flex-row justify-between items-center border-2 border-black border-dotted'>
             <h2 className="ml-9 text-2xl font-extrabold cursor-pointer">SWE/ENG</h2>
             <button onClick={() => { setMenuOpen(!menuOpen) }}
                 className="mr-12 flex flex-col justify-center items-center cursor-pointer">

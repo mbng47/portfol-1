@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 import Menu from '../components/Menu';
 import Home from '../components/Home';
 import About from '../components/About';
@@ -12,16 +12,18 @@ export default function Page() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // py-14 px-16
+
   return (
     <>
-      <main className={`min-h-screen w-full bg-pink-BG text-white py-14 px-16 duration-500 ${menuOpen ? '-translate-x-64' : ''}`}>
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <main className={`z-10 min-h-screen w-full absolute top-0 right-0 bg-pink-BG text-white duration-500 border-2 border-black border-dotted ${menuOpen ? '-translate-x-64' : ''}`}>
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
         <Projects />
         <Contact />
       </main>
-      <aside className={`min-h-screen w-64 absolute top-0 right-0 ${menuOpen ? 'block' : 'hidden'}`}>
+      <aside className={`min-h-screen w-64 absolute top-0 right-0`}>
         <Menu />
       </aside>
     </>
