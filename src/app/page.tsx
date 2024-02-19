@@ -16,7 +16,7 @@ export default function Page() {
 
   return (
     <>
-      <main className={`z-10 min-h-screen w-full absolute top-0 right-0 bg-pink-BG text-white duration-500 border-2 border-black border-dotted ${menuOpen ? '-translate-x-64' : ''}`}>
+      <main className={`z-10 min-h-screen w-screen absolute top-0 right-0 bg-pink-BG text-white duration-500 border-2 border-black border-dotted ${menuOpen ? '-translate-x-64' : ''}`}>
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
