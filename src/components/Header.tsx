@@ -6,7 +6,7 @@ export default function Header({ menuOpen, setMenuOpen }) {
     
 
     return (
-        <header className='w-screen fixed top-0 pt-10 pb-2 pl-14 pr-8 bg-pink-BG flex flex-row justify-between items-center'>
+        <header className='w-screen sticky top-0 pt-10 pb-2 pl-14 pr-8 bg-pink-BG flex flex-row justify-between items-center border-b border-black bg-opacity-50'>
             <h2 className="text-2xl font-extrabold cursor-pointer">SWE/ENG</h2>
             <button onClick={() => { setMenuOpen(!menuOpen) }}
                 className="mr-12 flex flex-col justify-center items-center cursor-pointer">
