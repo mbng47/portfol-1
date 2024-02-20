@@ -1,7 +1,10 @@
 'use client'
 import React from 'react';
 
+
+
 export default function Home(){
+
     return (
         <article id='home' className='h-screen pl-16 pt-28 flex flex-col justify-center'>
             <h2 className='uppercase font-[999] text-7xl'>Web developer</h2>
