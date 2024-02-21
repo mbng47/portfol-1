@@ -8,7 +8,6 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
 
-
 export default function Page() {
 
   const [menuOpen, setMenuOpen] = useState(false);
