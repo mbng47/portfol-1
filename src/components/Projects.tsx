@@ -8,11 +8,14 @@ import 'slick-carousel/slick/slick-theme.css';
 export default function Projects() {
 
     const carouselSettings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // adaptiveHeight: true,
+        centerPadding: '2rem',
+        centerMode: true,
     }
 
     return (
