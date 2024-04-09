@@ -14,14 +14,14 @@ export default function Page() {
 
   return (
     <>
-      <main className={`z-10 min-h-screen w-screen absolute top-0 right-0 bg-pink-BG text-white duration-500 ${menuOpen ? '-translate-x-64' : ''}`} onClick={() => menuOpen ? setMenuOpen(false) : ''}>
+      <main className={`z-10 min-h-screen w-screen absolute top-0 right-0 bg-pink-BG text-white duration-500 ${menuOpen ? '-translate-x-40 sm:-translate-x-64' : ''}`} onClick={() => menuOpen ? setMenuOpen(false) : ''}>
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
         <Projects />
         <Contact />
       </main>
-      <aside className={`min-h-screen w-64 absolute top-0 right-0`}>
+      <aside className={`min-h-screen w-40 sm:w-64 absolute top-0 right-0`}>
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </aside>
     </>
