@@ -8,7 +8,7 @@ export default function About() {
 
     return (
         <>
-            <article id='about' className='h-screen w-full flex flex-col sm:flex-row justify-center items-center gap-9 px-10 sm:px-20 border-2 border-black border-dotted'>
+            <article id='about' className='h-screen w-full flex flex-col sm:flex-row justify-center items-center gap-9 px-10 sm:px-20 2xl:px-28 border-2 border-black border-dotted'>
                 <Image className='sm:max-w-xs sm:max-h-xs rounded-full' src={profilePic} alt='Profile picture of Martin'/>
                 <p className='text-lg'>
                     Better safe than sorry. That's my motto. Yeah, you do seem to have a little 'shit creek' action going. You know, FYI, you can buy a paddle. Did you not plan for this contingency? I mean the Starship Enterprise had a self-destruct button. I'm just saying. 
