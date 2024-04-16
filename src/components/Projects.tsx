@@ -19,7 +19,7 @@ export default function Projects() {
     }
 
     return (
-        <article id='projects' className='h-screen w-full flex flex-row justify-center items-center border-2 border-black border-dotted'>
+        <article id='projects' className='h-screen w-full flex flex-row justify-center items-center px-10 sm:px-20 2xl:px-28'>
 
             <div className="px-20 max-w-lg">
                 <Slider {...carouselSettings}>

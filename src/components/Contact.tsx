@@ -47,21 +47,23 @@ export default function Contact() {
   };
 
   return (
-    <article id='contact' className='h-screen w-full'>
-      <form onSubmit={sendEmail}>
-        <label htmlFor="user_name">Name
-          <input type="text" name="user_name" title='user_name' placeholder='Chimp Apansson' />
-        </label>
-        <label>Email</label>
-        <input type="email" name="user_email" title='user_email' placeholder='ban@nen.se' />
-        <label>Message</label>
-        <textarea name="message" title='message' placeholder='Monkey business...' />
-        <input type="submit" value="Send" disabled={isSubmitting} />
-        {stateMessage && <p>{stateMessage}</p>}
+    <article id='contact' className='h-screen w-full pt-52 md:max-xl:pt-40 px-7 sm:px-20 flex flex-col border-2 border-black border-dotted'>
+                  <h2 className='uppercase font-[999] text-5xl sm:text-7xl'>Contact me</h2>
+                  {/* <h3 className='uppercase font-[900] text-5xl sm:text-6xl'>I always answer</h3> */}
+                  <p className='text-xl font-normal mt-5 max-w-700px'>Welcome to my site. I'm a software developer from Sweden residing in Malmö.</p>
+      <form className={'pt-4 flex flex-col gap-2'} onSubmit={sendEmail}>
+        <input className={'p-1 bg-white text-black font-medium rounded sm:max-w-2xl'} type="text" name="user_name" title='user_name' placeholder='Name' />
+        <input className={'p-1 bg-white text-black font-medium rounded sm:max-w-2xl'} type="email" name="user_email" title='user_email' placeholder='Email' />
+        <textarea className={'p-1 bg-white text-black font-medium rounded max-w-3xl basis-52'} name="message" title='message' placeholder='Message' />
+        <input className={'bg-white text-black max-w-14 cursor-pointer rounded border border-black focus:outline focus:outline-sky-400'} type="submit" value="Send" disabled={isSubmitting} />
+        {stateMessage && console.log(stateMessage)}
       </form>
     </article>
   );
 };
+
+
+
 
 // ----------------------------------------------------------
 
