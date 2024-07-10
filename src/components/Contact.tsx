@@ -59,7 +59,7 @@ export default function Contact() {
   };
 
   return (
-    <article id='contact' className='h-screen w-full pt-28 md:pt-36 2xl:pt-52 px-7 sm:px-20 flex flex-col'>
+    <article id='contact' className='h-screen w-full pt-14 md:pt-36 2xl:pt-52 px-7 sm:px-20 flex flex-col'>
       <h2 className='uppercase font-[999] text-5xl sm:text-6xl'>Contact me</h2>
       <div className='mt-5 inline sm:block'>
         <p className='text-lg font-normal inline sm:block sm:max-w-2xl'>Send me an email using this form. You'll get notified whether it went through or not, </p>
@@ -68,7 +68,7 @@ export default function Contact() {
       <form className={'pt-4 flex flex-col gap-2'} onSubmit={sendEmail}>
         <input className={'p-1 bg-white text-black font-medium rounded sm:max-w-2xl'} type="text" name="user_name" title='user_name' placeholder='Name' />
         <input className={'p-1 bg-white text-black font-medium rounded sm:max-w-2xl'} type="email" name="user_email" title='user_email' placeholder='Email' />
-        <textarea className={'p-1 bg-white text-black font-medium rounded max-w-3xl basis-60 sm:basis-48'} name="message" title='message' placeholder='Message' />
+        <textarea className={'p-1 bg-white text-black font-medium rounded max-w-3xl basis-52 sm:basis-48'} name="message" title='message' placeholder='Message' />
         <input className={'bg-white text-black max-w-14 cursor-pointer rounded border border-black focus:outline focus:outline-sky-400'} type="submit" value="Send" disabled={isSubmitting} />
       </form>
       <ToastContainer transition={Flip} />

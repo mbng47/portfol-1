@@ -10,18 +10,29 @@ export default function Projects() {
     const carouselSettings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 600,
         slidesToShow: 3,
         slidesToScroll: 1,
         // adaptiveHeight: true,
         centerPadding: '2rem',
         centerMode: true,
+
+        responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+        ],
+
     }
 
     return (
         <article id='projects' className='h-screen w-full flex flex-row justify-center items-center px-10 sm:px-20 2xl:px-28'>
 
-            <div className="px-20 max-w-lg">
+            <div className="px-20 max-w-md sm:max-w-full">
                 <Slider {...carouselSettings}>
                     <div className="mx-auto">
                         <img className="w-full rounded-md" src="https://placeimg.com/640/480/animals" alt="Slide 1" />
