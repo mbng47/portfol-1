@@ -69,13 +69,13 @@ const myProjects = [
     return (
         <article id='projects' className='h-screen w-full flex flex-row justify-center items-center px-10 sm:px-20 2xl:px-28'>
             <div className="px-20 max-w-md sm:max-w-full">
-                <Slider {...carouselSettings}>
+                <Slider {...carouselSettings} className=''>
                     {myProjects.map((project, index) => (
-                        <div key={index} className='mx-auto'>
-                            <Image className='max-w-52 max-h-52 sm:max-w-72 sm:max-h-72 rounded-full' src={project.img} alt={project.title} />
-                            <h3>{project.title}</h3>
-                            <a href={project.site}>Site</a>
-                            <a href={project.code}>Code</a>
+                        <div key={index} className='mx-6 flex flex-col justify-center items-center'>
+                            <Image className='max-w-52 max-h-52 sm:max-w-72 sm:max-h-72 rounded-lg' src={project.img} alt={project.title} />
+                            <h3 className='text-center'>{project.title}</h3>
+                            <a href={project.site} className='text-center'>Site</a>
+                            <a href={project.code} className='text-center'>Code</a>
                         </div>
                     ))}
                 </Slider>

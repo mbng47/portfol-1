@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast, Flip } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'dotenv/config';
+console.log(process.env);
 
-
-const serviceId = 'contact_service';
-const templateId = "contact_form";
-const publicKey = "xmS6JMCyCIQ3SY39O";
-console.log(serviceId, templateId, publicKey);
-
+// const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+// const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+// const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+// console.log(serviceId, templateId, publicKey);
 
 
 // ---------------------------------------------------
@@ -23,10 +23,10 @@ export default function Contact() {
     setIsSubmitting(true);
     emailjs
       .sendForm(
-        serviceId ?? "",
-        templateId ?? "",
+        process.env.NEXT_PUBLIC_SERVICE_ID ?? "",
+        process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "",
         e.target,
-        publicKey ?? ""
+        process.env.NEXT_PUBLIC_PUBLIC_KEY ?? ""
       )
       .then(
         (result) => {
