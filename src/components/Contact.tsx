@@ -4,15 +4,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast, Flip } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'dotenv/config';
-console.log(process.env);
 
-// const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
-// const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-// const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
-// console.log(serviceId, templateId, publicKey);
-
-
-// ---------------------------------------------------
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);

@@ -12,7 +12,7 @@ export default module.exports = {
     extend: {
       colors: {
         'pink-BG': '#f0a8f0',
-        'green-B': '#adff2f',
+        'green-B': '#FDF7FD',
       },
       backgroundImage: {
         'togglerinactiveimg': "url('https://i.ibb.co/rt3HybH/close.png')",
