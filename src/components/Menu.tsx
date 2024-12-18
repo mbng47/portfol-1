@@ -16,8 +16,8 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                 <li><Link to="contact" smooth={true} duration={800} className="cursor-pointer" onClick={() => menuOpen ? setMenuOpen(false) : ''}>Contact</Link></li>
             </ul>
             <ul className={'flex justify-center pt-5 gap-3'}>
-                <li><a href="https://github.com/mbng47"><Icon name='github' size={30} className={'cursor-pointer'} /></a></li>
-                <li><a href="https://www.linkedin.com/in/martin-bungner-edwards-9271bb23a/"><Icon name='linkedin' size={30} className={'cursor-pointer'} style={{ color: '#0077b5' }} /></a></li>
+                <li><a href="https://github.com/mbng47" target="_blank" rel="noopener noreferrer"><Icon name='github' size={30} className={'cursor-pointer'} /></a></li>
+                <li><a href="https://www.linkedin.com/in/martin-bungner-edwards-9271bb23a/" target="_blank" rel="noopener noreferrer"><Icon name='linkedin' size={30} className={'cursor-pointer'} style={{ color: '#0077b5' }} /></a></li>
             </ul>
             </section>
         </article>

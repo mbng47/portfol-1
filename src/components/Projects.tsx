@@ -75,6 +75,7 @@ export default function Projects() {
     return (
         <article id='projects' className='h-screen w-full flex flex-row justify-center items-center px-10'>
             <div className="px-20 max-w-md sm:max-w-full">
+                {/* <h2 className='-ml-8 mt-10 mb-12 uppercase font-[999] text-5xl sm:text-6xl'>Projects</h2> */}
                 <Slider {...carouselSettings} className=''>
                     {myProjects.map((project, index) => (
                         <div key={index} className='h-80'>
@@ -85,8 +86,8 @@ export default function Projects() {
                                 <div className='pt-5 text-black flex flex-col justify-center items-center space-y-3'>
                                     <h3 className='text-xl tracking-wider italic border-b border-black'>{project.title}</h3>
                                     <div className='text-lg flex flex-row justify-center space-x-2'>
-                                        <a href={project.site} className='font-medium tracking-wide border border-black border-solid border-1 rounded px-2'>Site</a>
-                                        <a href={project.code} className='font-medium tracking-wide border border-black border-solid border-1 rounded px-2'>Code</a>
+                                        <a href={project.site} target="_blank" rel="noopener noreferrer" className='font-medium tracking-wide border border-black border-solid border-1 rounded px-2'>Site</a>
+                                        <a href={project.code} target="_blank" rel="noopener noreferrer" className='font-medium tracking-wide border border-black border-solid border-1 rounded px-2'>Code</a>
                                     </div>
                                 </div>
                             </div>
